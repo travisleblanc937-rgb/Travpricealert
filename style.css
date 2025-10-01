@@ -16,3 +16,7 @@ main{display:grid;grid-template-columns:1fr;gap:12px}
 .alert{padding:8px;border-radius:8px;margin-bottom:8px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,0,0,0.02));border-left:4px solid rgba(255,255,255,0.06)}
 footer{margin-top:12px;text-align:center;color:#93a3c0;font-size:0.85rem}
 @media(min-width:800px){main{grid-template-columns:2fr 1fr}}
+button, select {
+  padding: 12px 16px;
+  font-size: 1rem;
+}
