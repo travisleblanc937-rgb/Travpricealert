@@ -6,9 +6,15 @@ const sampleCards = [
   {id:4,name:'Umbreon GX',price:78.25,history:[70,72,75,78.25]},
   {id:5,name:'Gengar VMAX',price:210.00,history:[200,205,208,210]}
 ];
-button, select {
-  padding: 12px 16px;
-  font-size: 1rem;
+
+let autoSim = setInterval(simulatePriceChange, 15000);
+
+function simulatePriceChange() {
+  // your existing logic
+  if(Math.abs(pct) >= 10){
+    const el = addAlert(`${card.name} moved ${pct}% — $${old.toFixed(2)} → $${neu.toFixed(2)}`);
+    el.classList.add('big-change');
+  }
 }
 
 
