@@ -6,6 +6,11 @@ const sampleCards = [
   {id:4,name:'Umbreon GX',price:78.25,history:[70,72,75,78.25]},
   {id:5,name:'Gengar VMAX',price:210.00,history:[200,205,208,210]}
 ];
+button, select {
+  padding: 12px 16px;
+  font-size: 1rem;
+}
+
 
 let cards = JSON.parse(JSON.stringify(sampleCards)); // clone for runtime
 const alertsDiv = document.getElementById('alerts');
