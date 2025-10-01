@@ -1,19 +1,24 @@
 <!doctype html>
 <html lang="en">
-<head><meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-  let autoSim = setInterval(simulatePriceChange, 15000);
-if(Math.abs(pct) >= 10){
-  const el = addAlert(`${card.name} moved ${pct}% — $${old.toFixed(2)} → $${neu.toFixed(2)}`);
-  el.classList.add('big-change');
-}
-<link rel="icon" href="favicon.png" type="image/png">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-button, select {
-  padding: 12px 16px;
-  font-size: 1rem;
-}
+  <!-- Mobile app mode -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <title>Card Price Chart - Demo</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
 
 <meta name="mobile-web-app-capable" content="yes">
 
